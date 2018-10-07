@@ -2,14 +2,14 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { Input } from '@angular/core';
-
+import { CardComponent } from './card/card.component';
 
 describe('AppComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent, CardComponent
       ],
       imports: [
         FormsModule
@@ -33,7 +33,7 @@ describe('AppComponent', () => {
       location: 'Stockholm',
       notes: 'There are no notes on this guy, but he is cool'
     }; 
-    
+
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
 

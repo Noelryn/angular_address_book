@@ -66,6 +66,7 @@
       </div>
     </form>
   </div>
-<pre>
-  {{ contacts | json }}
-</pre>
+
+  <ng-container class="container" *ngFor="let contact of contacts">
+    <app-contact></app-contact>
+  </ng-container>
