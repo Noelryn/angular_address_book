@@ -9,7 +9,8 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent, CardComponent
+        AppComponent, 
+        CardComponent
       ],
       imports: [
         FormsModule
