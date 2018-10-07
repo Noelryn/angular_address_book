@@ -6,9 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ang-address-book';
+  contact: any
+  contacts: any[] = [];
+
+  constructor() {
+    this.initContact();
+  }
 
   createNewContact() {
-    console.log('Someone Clicked Me!!!')
+    console.log(`Creating the following contact: ${JSON.stringify(this.contact)}`);
+    this.contacts.push(this.contact);
+    this.initContact();
+  }
+  private initContact() {
+    this.contact = {
+      name: ``,
+      email: ``,
+      company: ``,
+      role: ``,
+      twitter: ``,
+      location: ``,
+      notes: ``
+    }
   }
 }
