@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() contact: any;
 
-  constructor() {}
-
-  ngOnInit() {
+  constructor() {
     this.contact = {
       name: '',
       email: '',
@@ -21,4 +19,9 @@ export class CardComponent implements OnInit {
       notes: ''
     };
   }
+
+  ngOnInit() {
+
+  }
+  
 }
